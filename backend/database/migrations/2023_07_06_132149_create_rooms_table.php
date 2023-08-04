@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('has_heating');
             $table->boolean('has_internet');
             $table->integer('price');
-            $table->foreignUuid('owner_id')->constrained('users');
+            $table->foreignUuid('owner_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

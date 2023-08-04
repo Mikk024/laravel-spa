@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreignUuid('user_id')->constrained('users');
-            $table->foreignUuid('room_id')->constrained('rooms');
+            $table->foreignUuid('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignUuid('room_id')->constrained('rooms')->onDelete('cascade');
             $table->dateTime('start_date');
             $table->dateTime('end_date');
             $table->integer('price');

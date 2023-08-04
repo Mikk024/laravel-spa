@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreignUuid('reservation_id')->constrained('reservations');
+            $table->foreignUuid('reservation_id')->constrained('reservations')->onDelete('cascade');
             $table->integer('rating');
             $table->string('comment');
             $table->timestamps();
