@@ -1,0 +1,10 @@
+@media (max-width: 640px) {
+    .px-32 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .grid-cols-2 {
+      grid-template-columns: 1fr;
+    }
+}
