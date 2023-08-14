@@ -48,6 +48,7 @@ const RentPage = () => {
             navigate('/')
         } catch (e) {
             setDisabled(false)
+            console.log(e)
             if (e.response.status === 422) {
                 setErrors(e.response.data.errors)
             }

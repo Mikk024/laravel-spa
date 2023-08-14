@@ -45,9 +45,10 @@ class RoomController extends Controller
         $imageDestination = auth()->id() . Carbon::now();
 
         foreach ($request->file('images') as $image) {
-            $imagePath = $image->store('rents/images/' . $imageDestination, 'public');
+            $imagePath = $image->store('rents/images/' . $imageDestination, 'gcs');
+            $imageUrl = Storage::disk('gcs')->url($imagePath);
             Image::create([
-                'file_path' => $imagePath,
+                'file_path' => $imageUrl,
                 'room_id' => $room->id
             ]);
         }
@@ -75,7 +76,7 @@ class RoomController extends Controller
         $this->authorize('delete', $room);
 
         foreach ($room->images as $image) {
-            Storage::delete('public/' . $image->file_path);
+            Storage::disk('gcs')->delete('public/' . $image->file_path);
         };
 
         $room->delete();
@@ -91,7 +92,7 @@ class RoomController extends Controller
 
         $userId = auth()->id();
 
-        $rooms = Room::with('images')->where('owner_id', $userId)->paginate(10);
+        $rooms = Room::with('images')->where('owner_id', $userId)->paginate(8);
 
         return RoomResource::collection($rooms);
     }

@@ -27,7 +27,7 @@ class RoomRequest extends FormRequest
             'price' => ['required', 'integer', 'between:10, 2000'],
             'images' => [
                 Rule::when(request()->isMethod('POST'), [
-                    'required', 'array', 'between:6, 16'
+                    'required', 'array', 'between:2, 16'
                 ])
             ],
             'images.*' => ['file', 'image', 'max:2048']

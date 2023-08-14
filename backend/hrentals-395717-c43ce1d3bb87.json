@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hrentals-395717",
+  "private_key_id": "c43ce1d3bb872438cec71b6e7ae00a07b162eec5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyFWgmkMKwk3wV\nI3x18kvg20FblWhsL+8+u23D/S4TIbDjDHPC4CPNcm+iztDF8ZB9FRCMFsYMuIQe\nGEOI9lAfRj0VtoFCOBKWukHg3I6AvHUNlYyQnf44PsQudWFMC4TEHGV1P5TOijbM\njRgmOHzSlQguHPiNw19YEd82bQAJMZq3jVBlfpz/tRFKTsOyp7B5s3kKMYArtLhw\nGX+zA0XXgE5zI2GtzB3Qj9jqI7Ajf15rHQHg1q8SIJqCoVrP4Jiws/m2UXj5F40y\n8K5DmJVnPsqvmQaE92jsxTP8HrKLZ8jKRp+pFq246XgQaxkL5prbPeum8pmP7Hxd\n8w1IvwxDAgMBAAECggEAMieQRShJBMUM0cFESM2cLDBkCGCcX7fiWBcec2/HPbEj\n6dY0diJ9QtvjcAVyTAVcLbY0ilfRoHyJDRbFUnoYl65G/un/HoC/T38WlbdYVQ5+\novxG8eXlVr7qrrD1XZ7y3e6nbm2hQcgwZcypC/6lvQMnIiGbqQVowVuLM39gXrYG\nwjtJrjgcxBntnc/ubC82jq4gyilZJBrjJXsqQJpeCvyjvVKGp8If6cEqrAUJj8BC\nHpfwAF/JFoY4H7VMJS9J76mcrAt2NhqWN0OIqxv1topJGZ0adeKC454ZpqaYC4NU\n6/2NKxSmWzAf+UeEHllTjXMjrD7LSZ2/w7x3Mv/HqQKBgQDitNsGKcVpKhGqEnty\nikSYZD6hhZ7dK/p5loEQa64+/IOpfxrcQ7K5IQen5UpAg4a0pgQBJPRna6mEg4fw\n2A4Rc/kGDpgtDeSo5FoptWMOmds4ZORkWf3FfcTCTH7dZdnR3TliMNRIfAIKoyhx\n9BgX/uE7h0j0GcLo8fZhw6MZGQKBgQDJGCxLx5hmnY92ZSamXVqE7YJUoB+ACLi8\ntmA+yxtDrtnZXEY2wWQmC3rl/Pt6ZAWlocHC2ZT2uSLvt5TNAweupg5dz8qhUEbs\nE3qQeXqig5MNa+ZgSXYNgd1bYUx63EMHB/rouyJ34YtoG+23UMNseKSn+hG+suBj\nGZkH7WVPuwKBgQDNM1ZspbKCFgoXHtOOQYkFRvdJzGCXYQ8+rvPzoQP/DyE9ckcl\nyEElQLhlSC2FZ4euS/aj8ocmdVTjFQse/PD+6zIkQWGMpl6qYMcbqYsX1DuROAFi\ns/H3qHdIR2UtkNswEkW2kuwTD+vpJPWe74o/bf0AnNtz1z2NDDYvF52xQQKBgGh4\nXXLU85DD5CcO76BYOVF7jkzmjtbWMRsg6ClXHQfxi42HiZaiq6O0LRnUbtUrp19g\nBKh0nxX6InNE/VHwdApAjJAiBlP9v4qfp/nsklBhaID9gEafg2wK/nOdvbzKNyws\n8iX8KjD7hJAGil3E4HG2z1vQ520ZwsbZIo5iv1JHAoGAO7cVPMg+lqXcIFgdWld2\n2GlgIkp3gKT/+0xNpQVHmyu6Zs7cQ0HEBsfQV5zuQjGLRuQEe5MGp0oAEiw/X2FI\nKxbMn8nQYcsjCXH3BEpvAI9dOTh5FlbCMfpk6fdDtY901a9wl6FDuQH1ts5j0D4k\n9cB4ysRUl+GHLCfMFD5YBaY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "laravel-data-api@hrentals-395717.iam.gserviceaccount.com",
+  "client_id": "100295946842906204907",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/laravel-data-api%40hrentals-395717.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

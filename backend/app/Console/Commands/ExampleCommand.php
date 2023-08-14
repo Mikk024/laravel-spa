@@ -29,13 +29,15 @@ class ExampleCommand extends Command
      */
     public function handle()
     {
-        $image = Image::first();
+        $exampleContent = 'This is an example file content.';
+        $exampleFileName = 'example.txt';
 
-        $imageExists = Storage::exists('app/' . $image->file_path);
+        $path = Storage::disk('gcs')->put($exampleFileName, $exampleContent);
 
-        $this->info($imageExists);
-
-        $this->info($image->file_path);
-
+        if ($path) {
+            $this->info('Example file stored in Google Cloud Storage: ' . $path);
+        } else {
+            $this->error('Failed to store example file in Google Cloud Storage.');
+        }
     }
 }

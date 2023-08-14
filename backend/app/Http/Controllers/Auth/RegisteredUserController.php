@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules;
 
 class RegisteredUserController extends Controller
@@ -29,8 +30,9 @@ class RegisteredUserController extends Controller
         ]);
 
         if ($request->hasFile('profile_image')) {
-            $filePath = $request->file('profile_image')->store('users/image/' . Carbon::now() . Str::random(10), 'public');
-            $validated['profile_image'] = $filePath;
+            $imagePath = $request->file('profile_image')->store('users/image/' . Carbon::now() . Str::random(10), 'gcs');
+            $imageUrl = Storage::disk('gcs')->url($imagePath);
+            $validated['profile_image'] = $imageUrl;
         }
 
         Hash::make($validated['password']);

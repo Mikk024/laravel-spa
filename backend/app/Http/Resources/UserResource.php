@@ -23,7 +23,7 @@ class UserResource extends JsonResource
         ];
 
         if (isset($this->profile_image)) {
-            $data['profile_image'] = asset('storage') . '/' . $this->profile_image;
+            $data['profile_image'] = $this->profile_image;
         }
 
         return $data;
